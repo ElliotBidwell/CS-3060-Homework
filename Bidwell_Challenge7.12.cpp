@@ -1,7 +1,7 @@
 /*
 Elliot Bidwell
 CS 3060 Section 002
-Homework programming challenge 7.12
+Challenge 7.12 Calculat Letter Grade
 
 Desctription:
 

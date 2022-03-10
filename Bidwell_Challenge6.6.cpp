@@ -1,7 +1,7 @@
 /*
 Elliot Bidwell
 CS 3060 002
-Homework challenge 6.6
+Challenge 6.6 Kinetic Energy
 */
 
 #include <iostream>

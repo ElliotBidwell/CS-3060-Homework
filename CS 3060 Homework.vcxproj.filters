@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bidwell_Challenge13.3.cpp">
+    <ClCompile Include="Bidwell_Challenge11.13.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

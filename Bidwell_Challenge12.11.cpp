@@ -1,7 +1,7 @@
 /*
 Elliot Bidwell
 CS 3060 Section 002
-Challenge 12.11
+Challenge 12.11 
 
 */
 
@@ -28,7 +28,7 @@ int main()
     //Division structure variables for each division
     Division east, west, north, south; 
     
-    //loop counter for each quarter
+    //Loop counter for each quarter
     int qtr;
     
     //Assign division names to the division variable
@@ -36,6 +36,9 @@ int main()
     strcpy_s(west.divName, "West");
     strcpy_s(north.divName, "North");
     strcpy_s(south.divName, "South");
+
+    //Get user input for sales
+
     
     return 0;
 }

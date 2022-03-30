@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bidwell_Challenge15.1.cpp">
+    <ClCompile Include="Bidwell_Challenge14.13.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Bidwell_Challenge15.7.cpp">
+    <ClCompile Include="FeetInches.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

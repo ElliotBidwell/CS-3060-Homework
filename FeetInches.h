@@ -1,15 +1,19 @@
 #pragma once
-//Specification file for the RoomDimension class
-#ifndef ROOM_DIMENSION_H
-#define ROOM_DIMENSION_H
+//Specification file for the FeetInches class
+#ifndef FEETINCHES_H
+#define FEETINCHES_H
 #include <iostream>
 
 using namespace std;
 
-class FeetInches;
+class FeetInches; //Forward declaration
 
+//Function prototypes for Overloaded Stream Operators
 ostream& operator << (ostream&, const FeetInches&);
 istream& operator >> (istream&, FeetInches&);
+
+//The FeetInches class holds distances or measurements
+//expressed in feet and inches
 
 class FeetInches {
 private:
@@ -17,7 +21,7 @@ private:
 	int inches;
 	void simplify();
 public:
-
+	//Constructor
 	FeetInches(int f = 0, int i = 0) {
 		feet = f;
 		inches = i;
@@ -42,8 +46,43 @@ public:
 
 	//Multiply function
 	FeetInches multiply(FeetInches obj) {
-
+		FeetInches temp;
+		temp.feet = feet * obj.feet;
+		temp.inches = inches * obj.inches;
+		temp.simplify();
+		return temp;
 	}
+
+	//Accessor functions
+	int getFeet() const {
+		return feet;
+	}
+
+	int getInches() const {
+		return inches;
+	}
+
+	//Overloaded operator functions
+	FeetInches operator + (const FeetInches&);
+	FeetInches operator - (const FeetInches&);
+	FeetInches operator ++ ();
+	FeetInches operator ++ (int);
+	bool operator > (const FeetInches&);
+	bool operator < (const FeetInches&);
+	bool operator == (const FeetInches&);
+
+	//New operators
+	bool operator >= (const FeetInches&);
+	bool operator <= (const FeetInches&);
+	bool operator != (const FeetInches&);
+
+	//Conversion functions
+	operator double();
+	operator int();
+
+	//Friends
+	friend ostream& operator << (ostream&, const FeetInches&);
+	friend istream& operator >> (istream&, const FeetInches&);
 };
 
 #endif

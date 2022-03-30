@@ -1,5 +1,6 @@
 /*
-	
+Elliot Bidwell
+
 */
 
 #ifndef EMPLOYEE_H

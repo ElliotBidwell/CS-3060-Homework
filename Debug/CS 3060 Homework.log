@@ -1,1 +1,2 @@
-﻿  CS 3060 Homework.vcxproj -> C:\Users\doobl\source\repos\ElliotBidwell\CS-3060-Homework\CS-3060-Homework\Debug\CS 3060 Homework.exe
+﻿FeetInches.obj : error LNK2019: unresolved external symbol "public: bool __thiscall FeetInches::operator==(class FeetInches const &)" (??8FeetInches@@QAE_NABV0@@Z) referenced in function "public: bool __thiscall FeetInches::operator!=(class FeetInches const &)" (??9FeetInches@@QAE_NABV0@@Z)
+C:\Users\Elliot\source\repos\CS 3060 Homework\Debug\CS 3060 Homework.exe : fatal error LNK1120: 1 unresolved externals

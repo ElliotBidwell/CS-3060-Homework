@@ -19,7 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Bidwell_MidtermP.36.cpp" />
+    <ClCompile Include="Bidwell_Challenge15.1.cpp" />
+    <ClCompile Include="Bidwell_Challenge15.7.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomerData.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="FeetInches.h" />
+    <ClInclude Include="PersonData.h" />
+    <ClInclude Include="ProductionWorker.h" />
+    <ClInclude Include="RoomCarpet.h" />
+    <ClInclude Include="RoomDimension.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

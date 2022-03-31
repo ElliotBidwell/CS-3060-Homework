@@ -82,7 +82,7 @@ public:
 
 	//Friends
 	friend ostream& operator << (ostream&, const FeetInches&);
-	friend istream& operator >> (istream&, const FeetInches&);
+	friend istream& operator >> (istream&, FeetInches&);
 };
 
 #endif

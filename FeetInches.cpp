@@ -101,6 +101,46 @@ bool FeetInches::operator < (const FeetInches& right) {
 }
 
 /*
+== operator
+*/
+bool FeetInches::operator == (const FeetInches& right) {
+	bool status;
+	if (feet == right.feet && inches == right.inches) {
+		status = true;
+	}
+	else {
+		status = false;
+	}
+
+	return status;
+}
+
+/*
+<< Operator
+*/
+ostream& operator << (ostream& strm, const FeetInches& obj) {
+	strm << obj.feet << " feet, " << obj.inches << " inches";
+	return strm;
+}
+
+/*
+>> Operator
+*/
+istream& operator >> (istream& strm, FeetInches& obj) {
+	//Prompt the user for the feet
+	cout << "Feet: ";
+	strm >> obj.feet;
+
+	//Prompt the user for the inches
+	cout << "Inches: ";
+	strm >> obj.feet;
+
+	obj.simplify();
+
+	return strm;
+}
+
+/*
 Conversion function to convert a Feetinches
 object to a double
 */
